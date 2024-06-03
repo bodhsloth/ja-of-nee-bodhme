@@ -1,0 +1,79 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<html lang="nl" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Ja of Nee Generator</title>
+    <meta property="og:title" content="Ja of Nee Generator" />
+    <meta
+      name="description"
+      content="De Ja of Nee Generator is een gratis online ja of nee-generator die u kunt
+	  gebruiken om antwoorden te vinden als u twijfelt of niet kunt beslissen
+	  welke u moet kiezen."
+    />
+    <meta
+      property="og:description"
+      content="De Ja of Nee Generator is een gratis online ja of nee-generator die u kunt
+	  gebruiken om antwoorden te vinden als u twijfelt of niet kunt beslissen
+	  welke u moet kiezen."
+    />
+    <meta property="og:image" content="#" />
+    <meta property="og:image:alt" content="Ja Nee Generator" />
+    <meta property="og:site_name" content="Ja Nee Generator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://ja-of-nee.bodh.me/" />
+    <link rel="alternate" hreflang="en" href="https://bodh.me/yes-no-button/" />
+    <meta
+      name="keywords"
+      content="ja of nee, ja of nee generator, ja en nee generator, ja nee generator, ja en nee, ja of neen, ja of nee rad, ja of nee tarot, ja of nee wheel, yes or no generator, ja of nee kiezer, ja.of.nee"
+    />
+    <meta name="author" content="Niraj Kumar" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        overflow-x: hidden;
+      }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMRNK6QL2Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-WMRNK6QL2Q");
+    </script>
+  </head>
+  <body>
+    <Navigation />
+    <Hero />
+    <Footer />
+
+    <script>
+      import "../scripts/ja-of-nee.js";
+    </script>
+  </body>
+</html>

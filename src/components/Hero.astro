@@ -1,0 +1,108 @@
+---
+
+---
+
+<div id="page">
+    <h1>
+      Ja
+      <span class="accent">of Nee </span>Generator
+    </h1>
+    <div class="mt-4 text-center">
+      <p class="text-lg text-gray-700 text-center">
+        De Ja of Nee Generator is een gratis online ja of nee-generator die u kunt
+        gebruiken om antwoorden te vinden als u twijfelt of niet kunt beslissen
+        welke u moet kiezen.
+      </p>
+    </div>
+    <input
+      type="text"
+      placeholder="Voer uw vraag in
+        "
+      class="mt-4 input w-fulinput input-bordered w-full max-w-xs"
+    />
+    <div class="card lg:w-96 md:w-96 sm:w-60 bg-base-100 shadow-lg p-8 mt-4">
+      <div class="circle card-body" id="circle">?</div>
+      <button class="btn bg-[#ffd87e]" id="generateButton">Genereren</button>
+    </div>
+  
+    <style>
+      body {
+        text-align: center;
+      }
+  
+      #page {
+        padding: 2rem;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: #fdfaf3;
+      }
+  
+      h1 {
+        font-size: 4rem;
+        letter-spacing: 0.5px;
+        font-weight: 900;
+        text-align: center;
+        color: #2e2b23;
+      }
+  
+      .accent {
+        background: -webkit-linear-gradient(#ffdd88, #ffc64a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+      .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
+        margin: 20px auto;
+        background-color: gray;
+        transition: background-color 0.3s;
+      }
+  
+      #generateButton {
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+  
+      .green {
+        background-color: #43e97b;
+      }
+  
+      .red {
+        background-color: #fd4548;
+      }
+  
+      .spin {
+        animation: spin 1s infinite linear;
+      }
+  
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+  
+      /* Responsive */
+      @media only screen and (max-width: 576px) {
+        h1 {
+          font-size: 40px;
+          line-height: 50px;
+        }
+      }
+    </style>
+  </div>
+  
